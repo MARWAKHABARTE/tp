@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision PHP : Tableaux Associatifs et Formulaires</title>
+</head>
+<body>
+    <h1>Révision PHP : Tableaux Associatifs et Traitement des Formulaires</h1>
+
+    <h2>Question 6 : Formulaire 'Nom' et 'Âge'</h2>
+    <form action="tp1.php" method="post">
+        <input type="text" name="nom" placeholder="Entrez votre nom" required>
+        <input type="number" name="age" placeholder="Entrez votre âge" required>
+        <button type="submit" name="question6">Envoyer</button>
+    </form>
+
+    <h2>Question 7 : Validation 'Âge'</h2>
+    <form action="tp1.php" method="post">
+        <input type="text" name="nom" placeholder="Entrez votre nom" required>
+        <input type="number" name="age" placeholder="Entrez votre âge" required>
+        <button type="submit" name="question7">Envoyer</button>
+    </form>
+
+    <h2>Question 8 : Couleur Préférée</h2>
+    <form action="tp1.php" method="post">
+        <select name="couleur" required>
+            <option value="Rouge">Rouge</option>
+            <option value="Vert">Vert</option>
+            <option value="Bleu">Bleu</option>
+        </select>
+        <button type="submit" name="question8">Soumettre</button>
+    </form>
+
+    <h2>Question 9 : Somme de Deux Nombres</h2>
+    <form action="tp1.php" method="get">
+        <input type="number" name="num1" placeholder="Nombre 1" required>
+        <input type="number" name="num2" placeholder="Nombre 2" required>
+        <button type="submit" name="question9">Calculer</button>
+    </form>
+
+    <h2>Question 10 : Type de Compte</h2>
+    <form action="tp1.php" method="post">
+        <select name="compte" required>
+            <option value="Administrateur">Administrateur</option>
+            <option value="Utilisateur">Utilisateur</option>
+        </select>
+        <button type="submit" name="question10">Soumettre</button>
+    </form>
+</body>
+</html>

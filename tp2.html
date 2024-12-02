@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 PHP et HTML</title>
+</head>
+<body>
+    <h1>TP2</h1>
+
+    <h2>Recherche Employé</h2>
+    <form action="tp2.php" method="POST">
+        <label for="nomEmp">Nom de l'employé :</label>
+        <input type="text" name="nomEmp" id="nomEmp">
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <h2>Connexion</h2>
+    <form action="tp2.php" method="POST">
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+        <label for="motDePasse">Mot de passe :</label>
+        <input type="password" name="motDePasse" id="motDePasse" required>
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <h2>Soumettre un commentaire</h2>
+    <form action="tp2.php" method="POST">
+        <label for="commentaire">Commentaire :</label>
+        <textarea name="commentaire" id="commentaire" rows="4"></textarea>
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <h2>Panier</h2>
+    <form action="tp2.php" method="POST">
+        <label>
+            <input type="checkbox" name="produits[]" value="0"> Produit 1 (700 MAD)
+        </label><br>
+        <label>
+            <input type="checkbox" name="produits[]" value="1"> Produit 2 (600 MAD)
+        </label><br>
+        <label>
+            <input type="checkbox" name="produits[]" value="2"> Produit 3 (500 MAD)
+        </label><br>
+        <button type="submit">Calculer Total</button>
+    </form>
+
+    <h2>Gestion des utilisateurs</h2>
+    <form action="tp2.php" method="POST">
+        <h3>Ajouter un utilisateur</h3>
+        <input type="hidden" name="action" value="ajouter">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <form action="tp2.php" method="POST">
+        <h3>Modifier un utilisateur</h3>
+        <input type="hidden" name="action" value="modifier">
+        <label for="id">ID :</label>
+        <input type="number" name="id" id="id" required>
+        <label for="nouveauNom">Nouveau Nom :</label>
+        <input type="text" name="nouveauNom" id="nouveauNom" required>
+        <label for="nouveauEmail">Nouveau Email :</label>
+        <input type="email" name="nouveauEmail" id="nouveauEmail" required>
+        <button type="submit">Modifier</button>
+    </form>
+
+    <form action="tp2.php" method="POST">
+        <h3>Supprimer un utilisateur</h3>
+        <input type="hidden" name="action" value="supprimer">
+        <label for="idSup">ID :</label>
+        <input type="number" name="id" id="idSup" required>
+        <button type="submit">Supprimer</button>
+    </form>
+</body>
+</html>
